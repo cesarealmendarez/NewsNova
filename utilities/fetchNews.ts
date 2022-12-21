@@ -1,8 +1,9 @@
 import { gql } from "graphql-request";
+import sortNewsByImage from "./sortNewsByImage";
 
 const fetchNews = async (
     categories : string,
-    keywords : string,
+    keywords? : string,
 ) => {
     const query = gql`
         query MyQuery(
@@ -51,9 +52,11 @@ const fetchNews = async (
         }),
     });
 
-    const queryResponseJson = await queryResponse.json();
+    const queryResponseJSON = await queryResponse.json();
 
-    return queryResponseJson.data.myQuery
+    const sortedQueryResponse = sortNewsByImage(queryResponseJSON.data.myQuery);
+
+    return sortedQueryResponse;
 
 };
 
