@@ -52,7 +52,7 @@ export default function Header(){
                     <Link
                         href={"/"}
                     >
-                        <h1 className="text-left text-4xl text-white font-black"><span className="mr-2">🗞️</span>NewsNova</h1>
+                        <h1 className="text-left text-4xl text-white font-black tracking-tighter"><span className="mr-2">🗞️</span>NewsNova</h1>
                     </Link>
                 </div>
                 <div className="w-2/3 flex flex-row items-center justify-end space-x-4">
@@ -155,11 +155,11 @@ export default function Header(){
                                 <Dialog.Panel className="w-full max-w-xl flex flex-col items-start justify-start bg-neutral-900 p-6 space-y-6 rounded-xl transition-all transform">
                                     <div className="w-full flex flex-row items-start justify-start">
                                         <div className="w-2/3 flex flex-row items-start justify-start">
-                                            <h1 className="text-left text-3xl text-white font-black tracking-tighter">Search NewsNova</h1>
+                                            <h1 className="text-left text-2xl 2xl:text-3xl xl:text-3xl lg:text-3xl md:text-3xl text-white font-black tracking-tighter outline-0">Search NewsNova</h1>
                                         </div>
                                         <div className="w-1/3 flex flex-row items-start justify-end">
                                             <button 
-                                                className="flex flex-col items-center justify-center text-center text-base text-white bg-violet-500 p-2 rounded-xl"
+                                                className="flex flex-col items-center justify-center text-center text-base text-white bg-violet-500 p-2 rounded-xl outline-0"
                                                 onClick={() => {
                                                     setSearchModalOpen(false);
                                                     setSearchTerm("");
@@ -178,7 +178,7 @@ export default function Header(){
                                         className="w-full flex flex-col items-center justify-center space-y-4"
                                     >
                                         <input
-                                            placeholder="Search and you must find ;)"
+                                            placeholder="What are you looking for?"
                                             value={searchTerm}
                                             onChange={(value) => {setSearchTerm(value.target.value);}}
                                             className="
@@ -190,7 +190,7 @@ export default function Header(){
                                         <button 
                                             disabled={!searchTerm.trim()} 
                                             className="
-                                                w-full flex flex-row item-center justify-center text-center text-base text-white font-semibold bg-violet-500 p-4 rounded-xl
+                                                w-full flex flex-row item-center justify-center text-center text-base text-white font-semibold bg-violet-500 p-4 rounded-xl outline-0
                                                 disabled:opacity-50
                                                 transition-all duration-300
                                             "
@@ -240,11 +240,11 @@ export default function Header(){
                                 <Dialog.Panel className="w-full max-w-xl flex flex-col items-start justify-start bg-neutral-900 p-6 space-y-6 rounded-xl transition-all transform shadow">
                                     <div className="w-full flex flex-row items-center justify-start">
                                         <div className="w-2/3 flex flex-row items-center justify-start">
-                                            <h1 className="text-left text-3xl text-white font-black tracking-tighter">Select to View Specific Category</h1>
+                                            <h1 className="text-left text-2xl 2xl:text-3xl xl:text-3xl lg:text-3xl md:text-3xl text-white font-black tracking-tighter outline-0">Select to View Specific Category</h1>
                                         </div>
                                         <div className="w-1/3 flex flex-row items-center justify-end">
                                             <button 
-                                                className="flex flex-col items-center justify-center text-center text-base text-white bg-violet-500 p-2 rounded-xl"
+                                                className="flex flex-col items-center justify-center text-center text-base text-white bg-violet-500 p-2 rounded-xl outline-0"
                                                 onClick={() => {
                                                     setSelectCategoryModalOpen(false);
                                                 }}
@@ -264,7 +264,13 @@ export default function Header(){
                                                         key={categoryIDX}
                                                         href={`/category/${category}`} 
                                                         onClick={() => {setSelectCategoryModalOpen(false);}}
-                                                        className="col-span-1 flex flex-col item-center justify-center text-center capitalize text-base text-white font-semibold bg-violet-500 p-4 rounded-xl"                                           
+                                                        className="
+                                                            col-span-1 flex flex-col item-center justify-center text-center capitalize text-base text-white font-semibold bg-violet-900 p-4 rounded-xl outline-0
+                                                            2xl:hover:scale-105 2xl:hover:bg-violet-900 
+                                                            xl:hover:scale-105 xl:hover:bg-violet-900
+                                                            lg:hover:scale-105 lg:hover:bg-violet-900
+                                                            transition-all duration-300 ease-in                                                                
+                                                        "                                           
                                                     >
                                                         <span className="text-3xl mr-2">{categoryEmoji(category)}</span>
                                                         {category}
@@ -274,7 +280,13 @@ export default function Header(){
                                                         key={categoryIDX}
                                                         href={`/category/${category}`} 
                                                         onClick={() => {setSelectCategoryModalOpen(false);}}
-                                                        className="col-span-1 flex flex-col item-center justify-center text-center capitalize text-white font-semibold bg-neutral-800 p-4 rounded-xl"                                           
+                                                        className="
+                                                            col-span-1 flex flex-col item-center justify-center text-center capitalize text-white font-semibold bg-neutral-800 p-4 rounded-xl outline-0
+                                                            2xl:hover:scale-105 2xl:hover:bg-violet-900 
+                                                            xl:hover:scale-105 xl:hover:bg-violet-900
+                                                            lg:hover:scale-105 lg:hover:bg-violet-900
+                                                            transition-all duration-300 ease-in                                                              
+                                                        "                                           
                                                     >
                                                         <span className="text-3xl mr-2">{categoryEmoji(category)}</span>
                                                         {category}
@@ -325,7 +337,7 @@ export default function Header(){
                             >
                                 <Dialog.Panel className="relative w-full max-w-xl flex flex-col items-center justify-center bg-neutral-900 p-6 rounded-xl transition-all transform shadow">
                                     <button 
-                                        className="absolute top-6 right-6 flex flex-col items-center justify-center text-center text-base text-white bg-violet-500 p-2 rounded-xl"
+                                        className="absolute top-6 right-6 flex flex-col items-center justify-center text-center text-base text-white bg-violet-500 p-2 rounded-xl outline-0"
                                         onClick={() => {
                                             setAboutModalOpen(false);
                                         }}
@@ -334,18 +346,22 @@ export default function Header(){
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                                         </svg>
                                     </button>                                    
-                                    <h1 className="text-center text-4xl text-white font-black">🗞️</h1>
-                                    <h1 className="text-center text-4xl text-white font-black mb-4">NewsNova</h1>
+
+                                    <h1 className="text-center text-3xl 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl text-white font-black">🗞️</h1>
+                                    <h1 className="text-center text-3xl 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl text-white font-black mb-4 tracking-tighter">NewsNova</h1>
                                     <p className="text-center text-base text-white font-normal">Live news app built ontop of Next.js 13. Front-end styled with TailwindCSS and HeadlessUI. Querying Mediastack REST API with GraphQL. Statically typed with TypeScript.</p>
+
                                     <div className="w-full grid grid-cols-1 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 gap-4 mt-4">
                                         <Link
                                             target={"_blank"}
                                             href={"https://github.com/cesarealmendarez/NewsNova"}
                                             className="
-                                                col-span-1 flex flex-col items-center justify-end text-center text-xl text-white font-black bg-neutral-800 p-4 rounded-xl
-                                                hover:scale-105 hover:bg-violet-900
+                                                col-span-1 flex flex-col items-center justify-end text-center text-xl text-white font-black bg-neutral-800 p-4 rounded-xl outline-0
+                                                2xl:hover:scale-105 2xl:hover:bg-violet-900 
+                                                xl:hover:scale-105 xl:hover:bg-violet-900
+                                                lg:hover:scale-105 lg:hover:bg-violet-900
                                                 transition-all duration-300 ease-in                                                 
-                                            "
+                                            "   
                                         >
                                             <AiFillGithub size={45} className="mb-2"/>
                                             NewsNova on GitHub
@@ -354,9 +370,11 @@ export default function Header(){
                                             target={"_blank"}
                                             href={"https://github.com/cesarealmendarez"}
                                             className="
-                                                col-span-1 flex flex-col items-center justify-end text-center text-xl text-white font-black bg-neutral-800 p-4 rounded-xl
-                                                hover:scale-105 hover:bg-violet-900
-                                                transition-all duration-300 ease-in                                                 
+                                                col-span-1 flex flex-col items-center justify-end text-center text-xl text-white font-black bg-neutral-800 p-4 rounded-xl outline-0
+                                                2xl:hover:scale-105 2xl:hover:bg-violet-900 
+                                                xl:hover:scale-105 xl:hover:bg-violet-900
+                                                lg:hover:scale-105 lg:hover:bg-violet-900
+                                                transition-all duration-300 ease-in                                                  
                                             "
                                         >
                                             <img 
@@ -408,16 +426,13 @@ export default function Header(){
                                 <Dialog.Panel className="w-full max-w-xl flex flex-col items-start justify-start bg-neutral-900 p-6 space-y-6 rounded-xl transition-all transform shadow">
                                     <div className="w-full flex flex-row items-center">
                                         <div className="w-1/3 flex flex-row items-center justify-start">
-                                            <Link                         
-                                                href={"/"}
-                                                className="text-left text-4xl text-white font-black tracking-tighter"
-                                            >
+                                            <h1 className="text-left text-3xl text-white font-black tracking-tighter outline-0">
                                                 NewsNova
-                                            </Link>                                                
+                                            </h1>                                                
                                         </div>
                                         <div className="w-2/3 flex flex-row items-center justify-end space-x-4">
                                             <button 
-                                                className="flex flex-row item-center justify-center text-center text=base text-white font-semibold bg-violet-900 p-2 rounded-xl"
+                                                className="flex flex-row item-center justify-center text-center text=base text-white font-semibold bg-violet-500 p-2 rounded-xl"
                                                 onClick={() => {setMobileMenuModalOpen(false);}}
                                             >
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -430,7 +445,9 @@ export default function Header(){
                                         <button
                                             onClick={() => {
                                                 setMobileMenuModalOpen(false);
-                                                setSearchModalOpen(true);
+                                                setTimeout(() => {
+                                                    setSearchModalOpen(true);
+                                                }, 500);                                                 
                                             }}
                                             className="w-full flex flex-row item-center justify-center text-center capitalize text-base text-white font-semibold bg-neutral-800 p-4 rounded-xl"                                                                                   
                                         >
@@ -442,7 +459,9 @@ export default function Header(){
                                         <button
                                             onClick={() => {
                                                 setMobileMenuModalOpen(false);
-                                                setSelectCategoryModalOpen(true);
+                                                setTimeout(() => {
+                                                    setSelectCategoryModalOpen(true);
+                                                }, 500);                                                
                                             }}
                                             className="w-full flex flex-row item-center justify-center text-center capitalize text-base text-white font-semibold bg-neutral-800 p-4 rounded-xl"                                                                                
                                         >
@@ -454,7 +473,9 @@ export default function Header(){
                                         <button
                                             onClick={() => {
                                                 setMobileMenuModalOpen(false);
-                                                setAboutModalOpen(true);
+                                                setTimeout(() => {
+                                                    setAboutModalOpen(true);
+                                                }, 500);
                                             }}
                                             className="w-full flex flex-row item-center justify-center text-center capitalize text-base text-white font-semibold bg-neutral-800 p-4 rounded-xl"                                          
                                         >
@@ -470,8 +491,6 @@ export default function Header(){
                     </div>
                 </Dialog>
             </Transition>                
-
-            
         </>
     );
 }
