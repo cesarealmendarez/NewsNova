@@ -52,7 +52,7 @@ export default function Header(){
                     <Link
                         href={"/"}
                     >
-                        <h1 className="text-left text-4xl text-white font-black tracking-tighter"><span className="mr-2">🗞️</span>NewsNova</h1>
+                        <h1 className="text-left text-4xl text-white font-black tracking-tighter"><span className="mr-2">📰</span>NewsNova</h1>
                     </Link>
                 </div>
                 <div className="w-2/3 flex flex-row items-center justify-end space-x-4">
@@ -98,7 +98,7 @@ export default function Header(){
                     <Link
                         href={"/"}
                     >                    
-                        <h1 className="text-left text-3xl text-white font-black"><span className="mr-2">🗞️</span>NewsNova</h1>
+                        <h1 className="text-left text-3xl text-white font-black"><span className="mr-2">📰</span>NewsNova</h1>
                     </Link>
                 </div>
                 <div className="w-1/3 flex flex-row items-center justify-end space-x-4">
@@ -347,7 +347,7 @@ export default function Header(){
                                         </svg>
                                     </button>                                    
 
-                                    <h1 className="text-center text-3xl 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl text-white font-black">🗞️</h1>
+                                    <h1 className="text-center text-3xl 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl text-white font-black">📰</h1>
                                     <h1 className="text-center text-3xl 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl text-white font-black mb-4 tracking-tighter">NewsNova</h1>
                                     <p className="text-center text-base text-white font-normal">Live news app built ontop of Next.js 13. Front-end styled with TailwindCSS and HeadlessUI. Querying Mediastack REST API with GraphQL. Statically typed with TypeScript.</p>
 
@@ -426,13 +426,13 @@ export default function Header(){
                                 <Dialog.Panel className="w-full max-w-xl flex flex-col items-start justify-start bg-neutral-900 p-6 space-y-6 rounded-xl transition-all transform shadow">
                                     <div className="w-full flex flex-row items-center">
                                         <div className="w-1/3 flex flex-row items-center justify-start">
-                                            <h1 className="text-left text-3xl text-white font-black tracking-tighter outline-0">
+                                            <h1 className="text-left text-2xl 2xl:text-3xl xl:text-3xl lg:text-3xl md:text-3xl text-white font-black tracking-tighter outline-0">
                                                 NewsNova
                                             </h1>                                                
                                         </div>
                                         <div className="w-2/3 flex flex-row items-center justify-end space-x-4">
                                             <button 
-                                                className="flex flex-row item-center justify-center text-center text=base text-white font-semibold bg-violet-500 p-2 rounded-xl"
+                                                className="flex flex-row item-center justify-center text-center text=base text-white font-semibold bg-violet-500 p-2 rounded-xl outline-0"
                                                 onClick={() => {setMobileMenuModalOpen(false);}}
                                             >
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -449,7 +449,7 @@ export default function Header(){
                                                     setSearchModalOpen(true);
                                                 }, 500);                                                 
                                             }}
-                                            className="w-full flex flex-row item-center justify-center text-center capitalize text-base text-white font-semibold bg-neutral-800 p-4 rounded-xl"                                                                                   
+                                            className="w-full flex flex-row item-center justify-center text-center capitalize text-base text-white font-semibold bg-neutral-800 p-4 rounded-xl outline-0"                                                                                   
                                         >
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-2">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
@@ -463,7 +463,7 @@ export default function Header(){
                                                     setSelectCategoryModalOpen(true);
                                                 }, 500);                                                
                                             }}
-                                            className="w-full flex flex-row item-center justify-center text-center capitalize text-base text-white font-semibold bg-neutral-800 p-4 rounded-xl"                                                                                
+                                            className="w-full flex flex-row item-center justify-center text-center capitalize text-base text-white font-semibold bg-neutral-800 p-4 rounded-xl outline-0"                                                                                
                                         >
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-2">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
@@ -477,11 +477,11 @@ export default function Header(){
                                                     setAboutModalOpen(true);
                                                 }, 500);
                                             }}
-                                            className="w-full flex flex-row item-center justify-center text-center capitalize text-base text-white font-semibold bg-neutral-800 p-4 rounded-xl"                                          
+                                            className="w-full flex flex-row item-center justify-center text-center capitalize text-base text-white font-semibold bg-neutral-800 p-4 rounded-xl outline-0"                                          
                                         >
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-2">
-                                                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
-                                            </svg>                                          
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                                            </svg>                                                                              
                                             About
                                         </button>                                                                                   
                                     </div>                                 
