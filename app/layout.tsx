@@ -1,3 +1,11 @@
+/*
+    © Cesar Almendarez 2022
+    -RootLayout.tsx-
+        ***
+    -TODO-
+        ***
+*/
+
 import '../styles/globals.css'
 import Footer from './Footer';
 import Header from './Header';

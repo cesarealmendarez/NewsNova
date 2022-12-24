@@ -1,11 +1,17 @@
+/*
+    © Cesar Almendarez 2022
+    -HomePage.tsx-
+        ***
+    -TODO-
+        ***
+*/
+
 import fetchNews from "../utilities/fetchNews";
 import NewsFeed from "./NewsFeed";
 
 async function HomePage(){
 
     const news : NewsResponse = await fetchNews("", "");
-
-    console.log(news.data)
 
     return(
         <div className="w-full flex flex-col space-y-6">

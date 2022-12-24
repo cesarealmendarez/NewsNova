@@ -1,3 +1,11 @@
+/*
+    © Cesar Almendarez 2022
+    -NewsFeed.tsx-
+        ***
+    -TODO-
+        ***
+*/
+
 import Article from "./Article";
 
 type Props = {

@@ -1,3 +1,11 @@
+/*
+    © Cesar Almendarez 2022
+    -fetchNews.ts-
+        ***
+    -TODO-
+        ***
+*/
+
 import { gql } from "graphql-request";
 import sortNewsByImage from "./sortNewsByImage";
 
@@ -57,7 +65,6 @@ const fetchNews = async (
     const sortedQueryResponse = sortNewsByImage(queryResponseJSON.data.myQuery);
 
     return sortedQueryResponse;
-
 };
 
 export default fetchNews;

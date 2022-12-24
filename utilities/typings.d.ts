@@ -1,3 +1,11 @@
+/*
+    © Cesar Almendarez 2022
+    -typings.d.ts-
+        ***
+    -TODO-
+        ***
+*/
+
 type Article = {
     author: string | null
     category: string;

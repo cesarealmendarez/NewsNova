@@ -1,3 +1,11 @@
+/*
+    © Cesar Almendarez 2022
+    -SearchPage.tsx-
+        ***
+    -TODO-
+        ***
+*/
+
 import fetchNews from "../../utilities/fetchNews";
 import NewsFeed from "../NewsFeed";
 

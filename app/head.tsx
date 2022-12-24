@@ -1,3 +1,11 @@
+/*
+    © Cesar Almendarez 2022
+    -Head.tsx-
+        ***
+    -TODO-
+        ***
+*/
+
 export default function Head(){
     return(
         <>
