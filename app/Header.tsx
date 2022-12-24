@@ -359,7 +359,7 @@ export default function Header(){
 
                                     <h1 className="text-center text-3xl 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl text-white font-black">📰</h1>
                                     <h1 className="text-center text-3xl 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl text-white font-black mb-4 tracking-tighter">NewsNova</h1>
-                                    <p className="text-center text-base text-white font-normal">Live news app built ontop of Next.js 13. Front-end styled with TailwindCSS and HeadlessUI. Querying Mediastack REST API with GraphQL. Statically typed with TypeScript.</p>
+                                    <p className="text-center text-base text-white font-normal">Live news web app. Interfacing MediaStack API with Next.js & GraphQL, leveraging StepZen. TailwindCSS styling along with HeadlessUI components. TypeScript for static types!</p>
 
                                     <div className="w-full grid grid-cols-1 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 gap-4 mt-4">
                                         <Link
