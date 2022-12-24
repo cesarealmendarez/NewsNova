@@ -46,7 +46,7 @@ export default function Header(){
 
     return(
         <>
-            {/* Not-Mobile Hidden */}
+            {/* Not-Mobile Header */}
             <div className="hidden 2xl:flex xl:flex lg:flex md:hidden w-full flex-row items-center justify-start px-6 py-4 bg-violet-500 rounded-xl">
                 <div className="w-1/3 flex flex-row items-center justify-start">
                     <Link
