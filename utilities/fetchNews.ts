@@ -40,13 +40,13 @@ const fetchNews = async (
         }
     `;
 
-    const queryResponse = await fetch("https://cobija.stepzen.net/api/rolling-mongoose/__graphql", {
+    const queryResponse = await fetch("https://litorala.us-east-a.ibm.stepzen.net/api/getting-started/__graphql", {
         method: 'POST',
         cache: "no-cache",
         next: { revalidate: 0 },
         headers: {
             "Content-Type": "application/json",
-            Authorization: `Apikey ${process.env.STEPZEN_API_KEY}`
+            Authorization: `apikey ${process.env.STEPZEN_API_KEY}`
         },
         body: JSON.stringify({
             query,
@@ -61,6 +61,10 @@ const fetchNews = async (
     });
 
     const queryResponseJSON = await queryResponse.json();
+
+    console.log("--------------------------")
+    console.log(queryResponseJSON)
+    console.log("--------------------------")
 
     const sortedQueryResponse = sortNewsByImage(queryResponseJSON.data.myQuery);
 
